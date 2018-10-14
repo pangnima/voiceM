@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pgwslider.min.css">
+    <link rel="stylesheet" href="../css/easyuse.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <title>VocievoMall</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.selectBox').on('click' , function(){
+                $(this).toggleClass('active');
+            })
+
+            $('.selectTab > li ').on('click' , function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- 팝업 -->
+    <div class="layerPop">
+        <div class="dim">
+            <div class="easyUserPop">
+                <h2>Select Voice</h2>
+                <ul class="selectTab">
+                    <li class="active">Usage</li>
+                    <li>Voice Color</li>
+                </ul>
+
+                <!-- 서치 셀렉트 -->
+                <div class="selectBox">
+                    ALL
+                    <ul class="usage">
+                            <li>
+                                HardWare
+                                <ul>
+                                    <li>AI Speaker</li>
+                                    <li>Kiosk</li>
+                                    <li>Robot</li>
+                                    <li>Smart Car / Navigation</li>
+                                    <li>Smart Home / IoT</li>
+                                    <li>Smart Phone / Computer</li>
+                                    <li>Wearable Device</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Software
+                                <ul>
+                                    <li>ARS</li>
+                                    <li>Chatbot</li>
+                                    <li>Education /  E-book</li>
+                                    <li>Messenger</li>
+                                    <li>Translation</li>
+                                    <li>etc</li>
+                                    <li>Wearable Device</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Originality Industry
+                                <ul>
+                                    <li>Broadcast / Concert / Hologram</li>
+                                    <li>Customer Service Voice</li>
+                                    <li>Game / Animation</li>
+                                    <li>Museum Curation</li>
+                                    <li>Transportation</li>
+                                    <li>Travel Guide</li>
+                                    <li>etc.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
+                <!-- // 서치 셀렉트 -->
+
+                <!-- 서치 텍스트 -->
+                <div class="searchBox">
+                    <input type="text" id="serchVocie">
+                    <label for="serchVocie"><img src="../images/search-icon.png" alt=""></label>
+                </div>
+                <!-- // 서치 텍스트 -->
+
+                <!-- 서치 리스트 -->
+                <!-- 서치 리스트 more 버튼 누르면 클래스 추가-->
+                <ul class="searchList more">
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="../images/voice-profile-img.png" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h2>Amie <span>$4.00/100kb</span></h2>
+                            <p><span>Age</span> <strong>20’s</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/select-voice-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn_more">Show more results</button>
+                <!-- //서치 리스트 -->
+            </div>
+        </div>
+    </div>
+    <!-- //팝업 -->
+
+
+
+
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="inner">
+                <h1 class="logoBox">
+                    <a class="logo" href="/index.html">VoiceMall</a>
+                    <span>Pick your Voice Color & Boom your Business</span>
+                </h1>
+                <div class="serachBox">
+                    <input type="text" id="serch" placeholder="Type here to search Voice">
+                    <label for="serch"><img src="../images/search-icon.png" alt=""></label>
+                    <div class="quickSearch" style="display:none;">
+                        <div class="recommended">
+                            <h2>Recommended Keyword</h2>
+                            <ul>
+                                <li># passion</li>
+                                <li># freedom</li>
+                                <li># wisdom</li>
+                                <li># knowledge</li>
+                                <li># observation</li>
+                                <li># communication</li>
+                            </ul>
+                        </div>
+                        <div class="popular">
+                            <h2>Popular Keyword</h2>
+                            <ul>
+                                <li class="on">1. #passion</li>
+                                <li class="on">2. #passion</li>
+                                <li class="on">3. #passion</li>
+                                <li>4. #passion</li>
+                                <li>5. #passion</li>
+                            </ul>
+                            <ul>
+                                <li>6. #passion</li>
+                                <li>7. #passion</li>
+                                <li>8. #passion</li>
+                                <li>9. #passion</li>
+                                <li>10. #passion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Console</a></li>
+                        <li>
+                            <span>
+                                <img src="../images/nav-lang-flag-us.png" alt="미국">
+                            </span>
+                            ENG ∨
+                        </li>
+                    </ul>
+                    <div class="loginBox">
+                        <!-- 로그인 전 -->
+                        <!-- <div class="login before">
+                            <a href="#">Sign in</a>
+                        </div> -->
+                        <!-- 로그인 후 -->
+                        <div class="login after">
+                            <span>Hello, <strong>Jain Louis</strong></span>
+                            <a href="#"><img src="../images/logout-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // 헤더 -->
+
+        <!-- GNB -->
+        <nav class="gnb">
+            <ul class="clearfix">
+                <li><a href="#">Vocie List</a></li>
+                <li class="active"><a href="#">Easy Use</a></li>
+            </ul>
+        </nav>
+
+        <!-- 컨텐츠 -->
+        <div id="container">
+            <div class="easyUseWrap">
+                <h2>Easy Track</h2>
+                <ul class="choiceBox">
+                    <li><img src="../images/upload-icon.png" alt=""> Upload File</li>
+                    <li><img src="../images/select-voice-icon.png" alt=""> Select Voice</li>
+                </ul>
+                <!-- 이지트랙 정보 -->
+                <div class="easyTrackInfo">
+                    <div class="imgBox">
+                        <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                        <span><img src="../images/vv-icon.png" alt=""></span>
+                    </div>
+                    <div class="infoBox">
+                        <h2>Voice Name</h2>
+                        <div>
+                            <dl>
+                                <dt>Age</dt>
+                                <dd>40's</dd>
+                            </dl>
+                            <dl>
+                                <dt>Gender</dt>
+                                <dd>Female</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <span>$1 / 20kb</span>
+                            <span>It's a passionate but rather embarrassing voice.</span>
+                        </div>
+                    </div>
+                    <div class="btnBox">
+                        <a href="#">
+                            <img src="../images/play-btn.png" alt="플레이버튼">
+                            <span>Preview</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- //이지트랙 정보 -->
+                <!-- 이지트랙 텍스트 -->
+                <div class="easyTrackText">
+                    Drag and drop your files, or type, paste, and edit text here.
+                </div>
+                <!-- //이지트랙 텍스트 -->
+                <button>Purchase</button>
+            </div>
+        </div>
+        <!-- //컨텐츠 -->
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <div class="siteMap clearfix">
+                    <h1>
+                        <a href="/index.html">VoiceMall</a>
+                    </h1>
+                    <ul>
+                        <li><a href="#">Term and Privacy</a></li>
+                        <li><a href="#">SDKs and Tools</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Company</a></li>
+                    </ul>
+                </div>
+                <div class="copy clearfix">
+                    <p>Copyright ⓒ 2018 SRuniverse - All Right Reserved.</p>
+                    <ul>
+                        <li><a href="#"><img src="../images/github-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/medium-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/youtube-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //푸터 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pgwslider.min.css">
+    <link rel="stylesheet" href="../css/voiceList.css">
+
+    <link rel="stylesheet" href="../css/colorpicker.css"> <!-- 컬러 피커-->
+    <link rel="stylesheet" href="../css/swiper.min.css"> <!-- 슬라이드 -->
+
+    
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="../js/colorpicker.js"></script> <!-- 컬러 피커-->
+    <script src="../js/swiper.min.js"></script> <!-- 슬라이드 -->
+
+    <title>VocievoMall</title>
+
+    <script>
+    $(document).ready(function(){
+
+        $('#colorpickerHolder').ColorPicker({flat: true});
+                
+
+        var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        direction: "vertical",
+        mousewheel: {
+            invert: true
+        },
+        initialSlide: 1500,
+        coverflowEffect: {
+            rotate: 10,
+            stretch: 100,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false
+        },
+        pagination: {
+            el: ".swiper-pagination"
+        },
+        on: {
+            init: blurring,
+            slideChange: blurring
+        }
+    });
+
+    function blurring() {
+        $(".swiper-slide").each(function() {
+            var blurriness = Math.abs($(this).css("z-index") - 1);
+            $(this).css({ filter: "blur(" + blurriness / 0.9 * 2 + "px" });
+        });
+    }
+
+    });
+    </script>
+<style>
+
+</style>
+</head>
+<body>
+    <!-- 팝업 -->
+    <div class="layerPop">
+        <div class="dim">
+            <div class="sign">
+                <img src="../images/alert-icon.png" alt="">
+                <p>Sign in is required <span>Login is required to use this service.</span></p>
+                <a class="btn_signIn" href="#">Sing in</a>
+                <a class="btn_close" href="#"><img src="../images/exit-icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- //팝업 -->
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logoBox">
+                    <a class="logo" href="/index.html">VoiceMall</a>
+                    <span>Pick your Voice Color & Boom your Business</span>
+                </h1>
+                <div class="serachBox">
+                    <input type="text" id="serch" placeholder="Type here to search Voice">
+                    <label for="serch"><img src="../images/search-icon.png" alt=""></label>
+                    <div class="quickSearch" style="display:none;">
+                        <div class="recommended">
+                            <h2>Recommended Keyword</h2>
+                            <ul>
+                                <li># passion</li>
+                                <li># freedom</li>
+                                <li># wisdom</li>
+                                <li># knowledge</li>
+                                <li># observation</li>
+                                <li># communication</li>
+                            </ul>
+                        </div>
+                        <div class="popular">
+                            <h2>Popular Keyword</h2>
+                            <ul>
+                                <li class="on">1. #passion</li>
+                                <li class="on">2. #passion</li>
+                                <li class="on">3. #passion</li>
+                                <li>4. #passion</li>
+                                <li>5. #passion</li>
+                            </ul>
+                            <ul>
+                                <li>6. #passion</li>
+                                <li>7. #passion</li>
+                                <li>8. #passion</li>
+                                <li>9. #passion</li>
+                                <li>10. #passion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Console</a></li>
+                        <li>
+                            <span>
+                                <img src="../images/nav-lang-flag-us.png" alt="미국">
+                            </span>
+                            ENG ∨
+                        </li>
+                    </ul>
+                    <div class="loginBox">
+                        <!-- 로그인 전 -->
+                        <!-- <div class="login before">
+                            <a href="#">Sign in</a>
+                        </div> -->
+                        <!-- 로그인 후 -->
+                        <div class="login after">
+                            <span>Hello, <strong>Jain Louis</strong></span>
+                            <a href="#"><img src="../images/logout-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- GNB -->
+        <nav class="gnb">
+            <ul class="clearfix">
+                <li class="active"><a href="#">Vocie List</a></li>
+                <li><a href="#">Easy Use</a></li>
+            </ul>
+        </nav>
+
+        <!-- 메세지창 -->
+        <div class="mesage">
+            <div class="wrap">
+                <p>Do you want to make a Voice? <a href="#">Click the link</a> <span href="#"><img src="../images/exit-icon-white.png" alt=""></span></p>
+            </div>
+        </div>
+        <!-- //메세지창 -->
+
+        <div id="container" class="voiceListWrap">
+            <div class="voiceType">
+                <h2>Select Voice Type</h2>
+                <p>Select Voice type</p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/easy-icon.png" alt="">
+                                <span>You can easily set up your voice and download it to a file.</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/api-link-icon.png" alt="">
+                                <span>You can create an API key to create a voice freely.</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn_list" href="#">I'm not sure yet. I'll check the list</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <div class="siteMap clearfix">
+                    <h1>
+                        <a href="/index.html">VoiceMall</a>
+                    </h1>
+                    <ul>
+                        <li><a href="#">Term and Privacy</a></li>
+                        <li><a href="#">SDKs and Tools</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Company</a></li>
+                    </ul>
+                </div>
+                <div class="copy clearfix">
+                    <p>Copyright ⓒ 2018 <span>SRuniverse</span> - All Right Reserved.</p>
+                    <ul>
+                        <li><a href="#"><img src="../images/github-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/medium-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/youtube-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

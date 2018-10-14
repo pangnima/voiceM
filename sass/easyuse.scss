@@ -1,0 +1,437 @@
+.easyUseWrap{ 
+    width:1240px; margin:55px auto 0;
+    position: relative;
+    > h2 { 
+        font-size: 40px;
+        letter-spacing: -0.7px;
+        color: #282828;
+        margin-bottom:20px;
+    }
+
+    // 상단버튼
+    .choiceBox {
+        position: absolute;
+        top:20px; right:0;
+        > li {
+            position: relative;
+            display:inline-block;
+            width: 160px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center; 
+            border-radius: 18px;
+            border: solid 1px #282828;
+            font-size: 18px;
+            letter-spacing: -0.4px;
+            color: #282828;
+            cursor: pointer;
+            margin-left:20px;
+            text-indent: 20px;
+            img {
+                width:20px;
+                position: absolute;
+                top: 50%;
+                left: 25px;
+                transform: translate(-50% , -50%);
+            }
+        }
+    }
+
+    // 이지트랙정보
+    .easyTrackInfo{
+        background-color: #ffffff;
+        border: solid 1px #afafaf;
+        border-radius: 8px;
+        box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+        padding: 25px 30px;
+        > div {
+            display:inline-block;
+            vertical-align: middle;
+            width:400px;
+            &.imgBox {
+                display:inline-block;
+                width:115px; height: 115px;
+                border-radius: 50%;
+                border:solid 3px blue;
+                position:relative;
+                > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+                > span {position:absolute; bottom:-5px; right:-5px; z-index: 10;}
+            }
+            &.infoBox {
+                position: relative;
+                top: 5px; left: 20px; 
+                width: 900px;
+                margin: 0 20px;
+                h2 {
+                    font-family: NanumSquareOTFR;
+                    font-size: 36px;
+                    letter-spacing: -1.5px;
+                    color: #282828;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                }
+                > div {
+                    margin-top:5px;
+                    dl {
+                        display:inline-block;
+                        font-family: NanumSquareOTFR;
+                        font-size: 24px;
+                        letter-spacing: -0.9px;
+                        color: #282828;
+                        margin-right:40px;
+                        dt { display:inline-block; font-weight: bold;}
+                        dd { display:inline-block; font-weight: normal}
+                    }
+                    span {
+                        display:inline-block;
+                        margin-right:60px;
+                        font-family: NanumSquareOTFR;
+                        font-size: 18px;
+                        letter-spacing: -0.7px;
+                        color: #282828;
+                        &:last-child{font-size:22px;}
+                    }
+                }
+            }
+            &.btnBox {
+                width:100px;
+                text-align: center;
+                > a {
+                    display:inline-block;
+                    vertical-align: middle;
+                    font-size: 24px;
+                    margin:0 3px;
+                    letter-spacing: -0.9px;
+                    line-height: 1;
+                    color: #282828;
+                    span {
+                        display:block;
+                        margin-top:10px;
+                        letter-spacing: -0.9px;
+                        color: #4505e0;
+                    }
+                }
+            }
+        }
+    }
+
+    // 이지트랙 텍스트
+    .easyTrackText{
+        height: 615px;
+        font-size: 24px;
+        line-height: 1.25;
+        letter-spacing: -0.7px;
+        background: #fff;
+        color: #afafaf;
+        border-radius: 2px;
+        margin:30px 0 50px;
+        padding:50px 30px;
+    }
+    button{
+        display: block;
+        font-family: NanumSquareOTFB;
+        font-weight: bold;
+        width: 210px;
+        height: 49px;
+        border-radius: 24.5px;
+        background-color: #282828;
+        color:#fff;
+        cursor: pointer;
+        font-size: 24px;
+        margin:0 auto 100px;
+        border:none;
+    }
+
+
+    // 구매완료
+    .purchaseComplit {
+        text-align: center;
+        padding-top:150px;
+        h2{ 
+            font-size: 36px;
+            letter-spacing: -0.3px;
+            color: #282828;
+        }
+        .btn_down{
+            display: block;
+            width: 280px;
+            height: 49px;
+            line-height: 49px;
+            margin:40px auto 230px;
+            border-radius: 24.5px;
+            font-size: 24px;
+            color:#fff;
+            background-color: #282828;
+        }
+    }
+}
+
+ // easyUserPop
+ .easyUserPop{
+    width: 580px;
+    height: 100%;
+    background-color: #f5f5f5;
+    position: fixed;
+    right:0;
+    padding:50px 55px 0 75px;
+    box-sizing: border-box;
+    > h2 {
+        font-family: NanumSquareOTFB;
+        font-size: 40px;
+        letter-spacing: -1.5px;
+        color: #282828;
+    }
+    // usage / vociecolor 탭
+    .selectTab {
+        margin-bottom:10px;
+        li { 
+            display:inline-block;
+            cursor: pointer;
+            font-size: 22px;
+            letter-spacing: -0.8px;
+            color: #282828;
+            margin-right:25px;
+            &.active {color: #ffb000;}
+        }
+    }
+
+    // usage / vociecolor 탭
+    .selectTab {
+        margin-bottom:30px;
+        li { 
+            display:inline-block;
+            cursor: pointer;
+            font-size: 22px;
+            letter-spacing: -0.8px;
+            color: #282828;
+            margin-right:25px;
+            &.active {color: #ffb000;}
+        }
+    }
+    .selectBox{
+        position: relative;
+        width: 100%; 
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+        padding-left:30px;
+        border: solid 1px #282828;
+        position: relative;
+        font-size: 22px;
+        cursor: pointer;
+        letter-spacing: -0.8px;
+        color: #282828;
+        box-sizing: border-box;
+        &:after {
+            content:'∨';
+            display:inline-block;
+            position:absolute;
+            top:50%; right:10px;
+            transform: translate(-50%,-50%);
+        }
+        &.active {
+            border-radius: 15px 15px 0 0;
+            background: #fff;
+            > ul { display:block !important; }
+        }
+        > ul {
+            &.usage{
+                display:none;
+                position: absolute;
+                left:0; top:100%;
+                width:100%;
+                height: 450px;
+                overflow-y: scroll;
+                background:#fff;
+                border: solid 1px #282828;
+                border-top:none;
+                padding: 10px 0 0 20px;
+                box-sizing:border-box; 
+                z-index: 10;
+                border-radius:0 0 15px 15px;
+                > li {
+                    font-size: 22px;
+                    letter-spacing: -0.8px;
+                    color: #afafaf;
+                    > ul {
+                        padding-left:20px;
+                        letter-spacing: -0.8px;
+                        color: #282828;
+                    }
+                }
+            }
+
+            &.vocieColor{
+                display:none;
+                position: absolute;
+                left:0; top:100%;
+                width:100%;
+                height: 620px;
+                background:#fff;
+                border: solid 1px #282828;
+                padding: 10px 0 0 20px;
+                border-radius: 0 0 15px 15px;
+                box-sizing:border-box; 
+                z-index: 10;
+                > li {
+                    font-size: 22px;
+                    letter-spacing: -0.8px;
+                    color: #afafaf;
+                    > span {
+                        display:inline-block;
+                        width:20px;height:20px;
+                        vertical-align: middle;
+                        border-radius: 50%;
+                        &.passion{background:#c70800}
+                        &.freedom{background:#ff3100}
+                        &.wisdom{background:#e8481c}
+                        &.knowledge{background:#f8e71c}
+                        &.observation{background:#d8d94b}
+                        &.stability{background:#4A5928}
+                        &.balance{background:#045D76}
+                        &.creation{background:#067ef2}
+                        &.communication{background:#014d97}
+                        &.plan{background:#0d1a6e}
+                        &.trust{background:#623689}
+                        &.adoption{background:#BF3F86}
+                    }
+                }
+            }
+        }
+    }
+    .searchBox{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 25px;
+        margin-top:18px;
+        border: solid 1px #282828;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        input {
+            width:100%;
+            height: 100%;
+            border:none;
+            padding-left:10px;
+            outline: none;
+        }
+        label {
+            position: absolute;
+            top:5px; right:10px;
+        }
+    }
+
+    .searchList {
+        margin-top:40px;
+        margin-bottom:50px;
+        &.more{ 
+            height:500px;
+            box-sizing: border-box;
+            padding-right:10px;
+            overflow-y: scroll;
+        }
+        > li {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            margin-bottom:10px;
+            padding:15px 20px;
+            background-color: #ffffff;
+            > div { 
+                display:inline-block;
+                vertical-align: middle;
+                &.imgBox {
+                    position: relative;
+                    width:125px;
+                    margin-right:20px;
+                    > img { width:100%;}
+                    span {
+                        position: absolute;
+                        bottom:0; right:0;
+                    }
+                }
+                &.infoBox {
+                    width:233px;
+                    h2 {
+                        font-family: NanumSquareOTFB;
+                        font-size: 24px;
+                        letter-spacing: -1px;
+                        color: #282828;
+                        span {
+                            font-family: NanumSquareOTFR;
+                            font-size: 12px;
+                            font-weight: normal;
+                            letter-spacing: -0.9px;
+                            color: #282828;
+                        }
+                    }
+                    p {
+                        font-family: NanumSquareOTFR;
+                        font-size: 14px;
+                        letter-spacing: -0.8px;
+                        color: #282828;
+                        line-height: 1.2;
+                        margin-bottom:5px;
+                        span {
+                            display:inline-block;
+                            width:70px;
+                            font-family: NanumSquareOTFR;
+                            font-size: 18px;
+                            font-weight: normal;
+                            letter-spacing: -1px;
+                            color: #282828;
+                        }
+                        strong {
+                            font-family: NanumSquareOTFB;
+                            font-size: 18px;
+                            letter-spacing: -1px;
+                            color: #282828;
+                        }
+                    }
+                    > ul  {
+                        margin-top:10px;
+                        > li { 
+                            display:inline-block; 
+                            font-family: NanumSquareOTFR;
+                            font-size: 12px;
+                            margin-right:15px;
+                            vertical-align: middle;
+                            text-align: center;
+                            color: #4505e0;
+                            img { vertical-align: sub; margin-right:5px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn_more{
+        display:block;
+        width: 130px;
+        height: 30px;
+        border-radius: 15px;
+        margin:0 auto;
+        background-color: #282828;
+        font-family: NanumSquareOTFR;
+        font-size: 12px;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    // 검색결과없음
+    .notfound{
+        text-align: center;
+        padding:150px 0;
+        h2 {
+            font-size: 36px;
+            letter-spacing: -0.3px;
+            text-align: center;
+            color: #282828;
+            line-height: 1.2;
+        }
+    }
+}

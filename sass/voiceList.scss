@@ -1,0 +1,623 @@
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+.voiceListWrap{
+    width:1240px;
+    margin:0 auto;
+}
+
+.colorSpectrum {
+    position: relative;
+    padding-top:30px;
+    > h2 { font-size:40px; color:#282828;}
+    > p {font-size:20px; color:#282828;}
+    > .language{
+        position: absolute;
+        right:70px;
+        > li {
+            display:inline-block;
+            font-family: NanumSquare;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            margin-left:22px;
+            > a { color:#afafaf;}
+            &.active {
+                > a { color: #4505e0; }
+            }
+        }
+    }
+    .colorSpectrumList {
+        display:inline-block;
+        width:500px; height:500px;
+        position: relative;
+        top:30px;
+        > div {
+            display:inline-block;
+            width:100px; height:100px;
+            border-radius: 50%;
+            transform-origin:320px;
+            position: absolute;
+            top:53%; left:-70px;
+            cursor: pointer;
+            > span {
+                display: none;
+                position:absolute;
+                background:rgba(40, 40, 40, 0.8);
+                color:#fff;
+                padding: 10px;
+                border-radius: 5px;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-top: 5px solid rgba(40, 40, 40, 0.6);
+                    border-bottom: 5px solid none;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    top: 98%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &:hover {
+                > span { display:inline-block;}
+            }
+            &.passion{
+                background:#c70800 !important; transform: rotate(0deg);
+                span {
+                    transform: rotate(0deg);
+                    top: -20px;
+                    right: -15px;
+                    width: 116px;
+                }
+            }
+            &.freedom{
+                background:#ff3100 !important; transform: rotate(30deg);
+                z-index: 20;
+                span {
+                    transform: rotate(-30deg);
+                    top: -15px;
+                    left: -58px;
+                    width: 142px;
+                }
+            }
+            &.wisdom{
+                background:#e8481c !important; transform: rotate(60deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-60deg);
+                    top: 5px;
+                    left: -95px;
+                    width: 166px;
+                }
+            }
+            &.knowledge{
+                background:#f8e71c !important; transform: rotate(90deg);
+                span {
+                    transform: rotate(-90deg);
+                    top: 30px;
+                    left: -80px;
+                }
+            }
+            &.observation{
+                background:#d8d94b !important; transform: rotate(120deg);
+                span {
+                    transform: rotate(-120deg);
+                    top: 55px;
+                    left: -90px;
+                }
+            }
+            &.stability{
+                background:#4A5928 !important; transform: rotate(150deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-150deg);
+                    top: 75px;
+                    left: -40px;
+                }
+            }
+            &.balance{
+                background:#045D76 !important; transform: rotate(180deg);
+                span {
+                    transform: rotate(-180deg);
+                    width: 160px;
+                    top: 80px;
+                    left: -40px;
+                }
+            }
+            &.creation{
+                background:#067ef2 !important; transform: rotate(210deg);
+                span {
+                    transform: rotate(-210deg);
+                    top: 80px;
+                    right: -60px;
+                    width: 146px;
+                }
+            }
+            &.communication{
+                background:#014d97 !important; transform: rotate(240deg);
+                span {
+                    transform: rotate(-240deg);
+                    top: 60px;
+                    right: -80px;
+                }
+            }
+            &.plan{
+                background:#0d1a6e !important; transform: rotate(270deg);
+                span {
+                    transform: rotate(-270deg);
+                    top: 30px;
+                    right: -75px;
+                }
+            }
+            &.trust{
+                background:#623689 !important; transform: rotate(300deg);
+                z-index: 10;
+                span {
+                    transform: rotate(-300deg);
+                    top: 5px;
+                    right: -60px;
+                }
+            }
+            &.adoption{
+                background:#BF3F86 !important; transform: rotate(330deg);
+                span {
+                    transform: rotate(-330deg);
+                    top: -15px;
+                    right: -56px;
+                }
+            }
+            &.colorPickerBox {
+                background: #ddd;
+                border-radius: inherit;
+                width: 255px;
+                height: 255px;
+                top: 39%;
+                left: 25%;
+                position:relative;
+                span {
+                    display:block;
+                    background:none;
+                    padding:0;
+                    font-family: NotoSansCJKkr;
+                    font-size: 16px;
+                    color: #282828;
+                    position: absolute;
+                    &:after{ display:none;} 
+                    &.lightness{
+                        transform: rotate(-90deg);
+                        left: -110px;
+                        top: 45%;
+                    }
+                    &.saturation{ left:30px; bottom:-30px}
+                }
+
+                // 컬러피커
+                .colorpicker{
+                    width:100%; height:100%;
+                    .colorpicker_color { 
+                        display:block;
+                        width:100%; height:100%; top:0; left:0;
+                        > div { background-size:100%; width:100%; height:100%;}
+                    }
+                    .colorpicker { width:100%; height:100%;}
+                    > div {display:none;}
+
+                }
+            }
+        }
+    }
+
+    .voiceColorInfo {
+        display:inline-block;
+        vertical-align: middle;
+        margin-left:200px;
+
+        // 카드슬라이드
+        .time-machine {
+            position: relative;
+            top:100px;
+            z-index: 1;
+            height: 550px;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 520px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 500px;
+                height: 90px;
+                z-index: 10;
+                -webkit-transform: translate(-50%, 150px);
+                transform: translate(0, 150px);
+            }
+        }
+        .swiper-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 385px;
+            height: 158px;
+            box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+            background-color: #ffffff;
+            border: solid 1px #f8f8f8;
+            padding:20px;
+            .imgBox {
+                display:inline-block;
+                vertical-align: middle;
+                width:130px; height:130px;
+                border:solid 3px red;
+                border-radius: 50%;
+                > img {width:100%;}
+            }
+
+            .infoBox{
+                display:inline-block;
+                vertical-align: middle;
+                width: 225px;
+                margin-left: 15px;
+                h3{
+                    font-family: NanumSquareOTFB;
+                    font-size: 24px;
+                    letter-spacing: -0.9px;
+                    color: #282828;
+                }
+                p {
+                    font-family: NanumSquareOTFB;
+                    font-size: 18px;
+                    letter-spacing: -0.9px;
+                    color: #282828;
+                    span {
+                        display: inline-block;
+                        width: 80%;
+                        line-height: 1.2;
+                        font-family: NanumSquareOTFL;
+                        font-size: 14px;
+                        color: #282828;
+                    }
+                }
+                > ul  {
+                    margin-top:10px;
+                    > li { 
+                        display:inline-block; 
+                        font-family: NanumSquareOTFR;
+                        font-size: 12px;
+                        margin-right:15px;
+                        vertical-align: middle;
+                        text-align: center;
+                        color: #4505e0;
+                        img { vertical-align: sub; margin-right:5px;}
+                    }
+                }
+            }
+        }
+        .arrow-btn {
+            background: url(../images/arrow-down.png);
+            width: 21px;
+            height: 88px;
+            opacity: 1;
+            left:450px
+        }
+
+
+    }
+}
+
+// 스크롤다운 텍스트 박스
+.scrollDownBox {
+    text-align: center;
+    margin:200px 0 100px;
+    h2 {
+        font-family: NanumSquareOTFR;
+        font-size: 50px;
+        letter-spacing: -0.7px;
+        color: #282828;
+        margin-bottom:60px;
+    }
+}
+
+.lnb {
+    width:280px;
+    float:left;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding:0 0 80px 40px;
+    box-sizing:border-box;
+    > h2 { 
+        font-family: NanumSquareOTFEB;
+        font-size: 40px;
+        letter-spacing: -1.7px;
+        margin:20px 0 15px;
+        color: #282828;
+    }
+    
+    .lnbList {
+        > li {
+            padding:5px 0; 
+            font-size:14px;
+            font-weight: bold;
+            > a { 
+                font-family: NanumSquareOTFR;
+                font-size: 14px;
+                letter-spacing: -0.6px;
+                color: #282828;
+                margin-right:5px;
+                &.active { 
+                    color:#4505e0;
+                }
+            }
+            > ul {
+                margin-top:10px;
+                margin-left:11px;
+                > li {
+                    padding:7px 0;
+                    font-weight: normal;
+                    &.active {
+                        > a { color:#4505e0;}
+                    }
+                    >a { display:block;}
+                }
+            }
+        }
+    }
+}
+
+.contents {
+    float:right;
+    width:940px;
+    > h2 { 
+        font-size: 36px;
+        font-weight: 800;
+        color:#282828;
+        > span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffb000;
+        }
+    }
+    > p { 
+        font-size: 17px; color:#282828;
+        img {width:26px; vertical-align: bottom;}
+    }
+    > ul {
+        margin-top:20px;
+        height:800px;
+        &.more{
+            overflow-y: scroll;
+            padding-right:10px;
+        }
+        > li {
+            float:left;
+            width:49%;
+            height: 180px;
+            border-radius: 12px;
+            box-sizing: border-box;
+            padding:10px 20px;
+            margin-bottom:20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+            &:nth-child(even){float:right;}
+            > div {
+                display:inline-block;
+                vertical-align: middle;
+                width:400px;
+                &.imgBox {
+                    display:inline-block;
+                    width:125px; height: 125px;
+                    border-radius: 50%;
+                    border:solid 3px blue;
+                    position:relative;
+                    > img { width: 100%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+                    > span {
+                        position:absolute; bottom:-5px; right:0px; z-index: 10;
+                        width:36px; height:36px;
+                        img { width:100%;}
+                    }
+                }
+                &.infoBox {
+                    width: 250px;
+                    margin-left: 20px;
+                    h2 { 
+                        font-size: 24px;
+                        letter-spacing: -1px;
+                        color: #282828;
+                        span {
+                            font-size: 12px;
+                            letter-spacing: -0.9px;
+                            color: #282828;
+                            font-weight: normal;
+                            margin-left:5px;
+                        }
+                    }
+                    p {
+                        font-family: NanumSquareOTFR;
+                        font-size: 18px;
+                        letter-spacing: -1px;
+                        color: #282828;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                        span {
+                            display:inline-block;
+                            font-size:14px; line-height:1.1;
+                        }
+                    }
+                    ul {
+                        li { 
+                            display:inline-block;
+                            margin-right:10px;
+                            font-size:14px;
+                            img { vertical-align: sub; margin-right:5px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn_more{
+        display:block;
+        width: 210px;
+        height: 50px;
+        margin:30px auto;
+        border-radius: 25px;
+        background-color: #282828;
+        font-family: NanumSquareOTFR;
+        font-size: 22px;
+        letter-spacing: -0.7px;
+        color: #ffffff;
+        border:none;
+        cursor: pointer;
+    }
+}
+
+
+// purchase
+.voiceType {
+    padding-top:30px;
+    > h2 { font-size:40px; color:#282828;}
+    > p {font-size:20px; color:#282828;}
+
+    // 보이스타입 선택
+    ul {
+        text-align: center;
+        margin: 60px 0;
+        > li {
+            display:inline-block;
+            vertical-align: middle;
+            width:49%;
+            text-align: center;
+            span {  
+                display:block;
+                margin-top: 50px;
+                font-family: NanumSquareOTFB;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 1.2;
+                letter-spacing: -0.7px;
+                text-align: center;
+                color: #282828;
+            }
+        }
+    }
+    .btn_list{
+        width: 530px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50px;
+        background-color: #ffb000;
+        font-size: 32px;
+        letter-spacing: -0.8px;
+        color: #282828;
+        font-weight: bold;
+        padding: 5px 20px;
+        margin: 120px auto 200px;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+// 팝업
+.layerPop{
+    position: fixed;
+    width:100%; height:100%;
+    z-index: 20;
+    > .dim { 
+        background:rgba(0, 0, 0, 0.5);
+        width:100%; height:100%;
+
+        // 링크이동 팝업
+        .linkSelect {
+            padding:20px;
+            background:#fff;
+            position: absolute;
+            top:15%;
+            left:50%;
+            width:850px;
+            margin-left: -425px;
+            transform:rotate(50%);
+            > h2{
+                font-size: 30px;
+                text-align: center;
+                color: #282828;
+            }
+            > ul {
+                text-align: center;
+                margin: 40px 0;
+                > li {
+                    display:inline-block;
+                    vertical-align: middle;
+                    width:40%;
+                    margin:0 3%;
+                    text-align: center;
+                    span {  
+                        display:block;
+                        font-size: 20px; color: #282828;
+                        line-height: 1.2;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .btn_list{
+                width: 380px;
+                border-radius: 25px;
+                background-color: #ffb000;
+                font-size: 22px;
+                letter-spacing: -0.8px;
+                color: #282828;
+                padding: 5px 20px;
+                margin: 20px auto;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        // sign팝업
+        .sign{
+            width:850px;
+            padding:100px 0;
+            border-radius: 8px;
+            background-color: #ffffff;
+            border: solid 1px #979797;
+            position: absolute;
+            top:50%;
+            left:50%;
+            text-align: center;
+            transform:translate(-50%,-50%);
+            position: relative;
+            p { 
+                font-size: 36px; font-weight: bold;  color: #282828;
+                margin-top:20px;
+                span { 
+                    display:block;  font-size: 24px;  color: #d0021b;
+                    font-weight: normal;
+                }
+            }
+            .btn_signIn {
+                display:inline-block;
+                width: 280px;
+                height: 49px;
+                line-height: 49px;
+                border-radius: 24.5px;
+                background-color: #282828;
+                font-size: 24px;
+                color:#fff;
+                margin-top:50px;
+            }
+            .btn_close {
+                position: absolute;
+                top:15px; right:15px;
+            }
+        }
+    }
+}   

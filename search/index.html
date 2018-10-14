@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pgwslider.min.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <title>VocievoMall</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.sortBox').on('click' , function(){
+                $(this).toggleClass('active');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="inner">
+                <h1 class="logoBox">
+                    <a class="logo" href="/index.html">VoiceMall</a>
+                    <span>Pick your Voice Color & Boom your Business</span>
+                </h1>
+                <div class="serachBox">
+                    <input type="text" id="serch" placeholder="Type here to search Voice">
+                    <label for="serch"><img src="../images/search-icon.png" alt=""></label>
+                    <div class="quickSearch" style="display:none">
+                        <div class="recommended">
+                            <h2>Recommended Keyword</h2>
+                            <ul>
+                                <li># passion</li>
+                                <li># freedom</li>
+                                <li># wisdom</li>
+                                <li># knowledge</li>
+                                <li># observation</li>
+                                <li># communication</li>
+                            </ul>
+                        </div>
+                        <div class="popular">
+                            <h2>Popular Keyword</h2>
+                            <ul>
+                                <li class="on">1. #passion</li>
+                                <li class="on">2. #passion</li>
+                                <li class="on">3. #passion</li>
+                                <li>4. #passion</li>
+                                <li>5. #passion</li>
+                            </ul>
+                            <ul>
+                                <li>6. #passion</li>
+                                <li>7. #passion</li>
+                                <li>8. #passion</li>
+                                <li>9. #passion</li>
+                                <li>10. #passion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Console</a></li>
+                        <li>
+                            <span>
+                                <img src="../images/nav-lang-flag-us.png" alt="미국">
+                            </span>
+                            ENG ∨
+                        </li>
+                    </ul>
+                    <div class="loginBox">
+                        <!-- 로그인 전 -->
+                        <!-- <div class="login before">
+                            <a href="#">Sign in</a>
+                        </div> -->
+                        <!-- 로그인 후 -->
+                        <div class="login after">
+                            <span>Hello, <strong>Jain Louis</strong></span>
+                            <a href="#"><img src="../images/logout-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- GNB -->
+        <nav class="gnb">
+            <ul class="clearfix">
+                <li class="active"><a href="#">Vocie List</a></li>
+                <li><a href="#">Easy Use</a></li>
+            </ul>
+        </nav>
+
+        <!-- 메세지창 -->
+        <div class="mesage">
+            <div class="wrap">
+                <p>Do you want to make a Voice? <a href="#">Click the link</a> <span href="#"><img src="../images/exit-icon-white.png" alt=""></span></p>
+            </div>
+        </div>
+        <!-- //메세지창 -->
+
+        <!-- 컨텐츠 -->
+        <div id="container">
+            <div class="searchResultWrap">
+                <h2>Results <span>(80)</span></h2>
+                <!-- more클래스추가 -->
+                <ul class="clearfix searchResultList">
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img class="photo" src="https://via.placeholder.com/200x200" alt="">
+                            <span><img src="../images/vv-icon.png" alt=""></span>
+                        </div>
+                        <div class="infoBox">
+                            <h3>Amie <span>$4.00/100kb</span></h3>
+                            <p><span>Age</span> <strong>20's</strong></p>
+                            <p><span>Gender</span> <strong>Female</strong></p>
+                            <p>It's a passionate but rather embarrassing voice.</p>
+                            <ul>
+                                <li><img src="../images/preview-icon.png" alt="">Preview</li>
+                                <li><img src="../images/purchase-icon.png" alt="">Purchase</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="btn_more">Show more results</button>
+            </div>
+        </div>
+        <!-- //컨텐츠 -->
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <div class="siteMap clearfix">
+                    <h1>
+                        <a href="/index.html">VoiceMall</a>
+                    </h1>
+                    <ul>
+                        <li><a href="#">Term and Privacy</a></li>
+                        <li><a href="#">SDKs and Tools</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Company</a></li>
+                    </ul>
+                </div>
+                <div class="copy clearfix">
+                    <p>Copyright ⓒ 2018 <span>SRuniverse</span> - All Right Reserved.</p>
+                    <ul>
+                        <li><a href="#"><img src="../images/github-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/medium-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/youtube-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //푸터 -->
+    </div>
+</body>
+</html>

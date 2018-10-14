@@ -1,0 +1,907 @@
+@charset "UTF-8";
+/** FONT **/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+body {
+  font-family: 'NanumSquareOTFR', sans-serif;
+}
+
+.passion {
+  border-color: #c70800 !important;
+}
+
+.freedom {
+  border-color: #ff3100 !important;
+}
+
+.wisdom {
+  border-color: #e8481c !important;
+}
+
+.knowledge {
+  border-color: #f8e71c !important;
+}
+
+.observation {
+  border-color: #d8d94b !important;
+}
+
+.stability {
+  border-color: #4A5928 !important;
+}
+
+.balance {
+  border-color: #045D76 !important;
+}
+
+.creation {
+  border-color: #067ef2 !important;
+}
+
+.communication {
+  border-color: #014d97 !important;
+}
+
+.plan {
+  border-color: #0d1a6e !important;
+}
+
+.trust {
+  border-color: #623689 !important;
+}
+
+.adoption {
+  border-color: #BF3F86 !important;
+}
+
+/* 헤더 */
+header {
+  background: #282828;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+header .inner {
+  width: 1240px;
+  height: 80px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+header .inner .logoBox {
+  width: 262px;
+  line-height: 1;
+  margin-top: 25px;
+  float: left;
+}
+
+header .inner .logoBox > .logo {
+  display: block;
+  width: 126px;
+  line-height: 1;
+  font-family: 'NanumSquare';
+  font-size: 30px;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+
+header .inner .logoBox > span {
+  width: 262px;
+  height: 16px;
+  font-family: NanumSquare;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+}
+
+header .inner .serachBox {
+  float: left;
+  margin: 25px 0 0 90px;
+  position: relative;
+}
+
+header .inner .serachBox input {
+  width: 560px;
+  height: 48px;
+  margin: 0;
+  border: none;
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  color: #9b9b9b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+}
+
+header .inner .serachBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  z-index: 20;
+}
+
+header .inner .serachBox .quickSearch .recommended {
+  padding: 15px 30px 30px;
+  background-color: #f5f5f5;
+  border-bottom: solid 1px #afafaf;
+}
+
+header .inner .serachBox .quickSearch .recommended h2 {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+header .inner .serachBox .quickSearch .recommended ul li {
+  display: inline-block;
+  border-radius: 30px;
+  border: solid 1px #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  padding: 10px;
+  color: #282828;
+  line-height: 1;
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch .popular {
+  padding: 15px 30px 30px;
+  overflow: hidden;
+}
+
+header .inner .serachBox .quickSearch .popular h2 {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+header .inner .serachBox .quickSearch .popular ul {
+  float: left;
+  width: 50%;
+}
+
+header .inner .serachBox .quickSearch .popular ul li {
+  font-family: NanumSquareOTFEB;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+  color: #afafaf;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .quickSearch .popular ul li.on {
+  color: #282828;
+  font-weight: bold;
+}
+
+header .inner .serachBox .autoSearch {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  padding: 10px 0 20px;
+  background: #fff;
+  z-index: 10;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+header .inner .serachBox .autoSearch ul li {
+  font-family: NanumSquareOTFEB;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+header .inner .serachBox .autoSearch ul li.on {
+  color: #282828;
+  font-weight: bold;
+}
+
+header .inner .categoryBox {
+  float: right;
+  margin-top: 25px;
+}
+
+header .inner .categoryBox > ul {
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+header .inner .categoryBox > ul > li {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  padding: 0 10px;
+  border-right: solid 1px #fff;
+  line-height: 1;
+}
+
+header .inner .categoryBox > ul > li > a {
+  display: block;
+  color: #fff;
+}
+
+header .inner .categoryBox > ul > li:last-child {
+  border-right: none;
+  cursor: pointer;
+}
+
+header .inner .categoryBox > ul > li span {
+  vertical-align: middle;
+}
+
+header .inner .categoryBox > .loginBox {
+  display: block;
+  vertical-align: middle;
+  text-align: right;
+}
+
+header .inner .categoryBox > .loginBox .login {
+  display: inline-block;
+}
+
+header .inner .categoryBox > .loginBox .login span {
+  font-family: NanumSquareOTFL;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: #ffffff;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+header .inner .categoryBox > .loginBox .login span strong {
+  vertical-align: bottom;
+}
+
+header .inner .categoryBox > .loginBox .login > a {
+  display: inline-block;
+  text-align: center;
+  border-radius: 17.5px;
+  border: solid 1px #fff;
+  color: #fff;
+  width: 85px;
+  height: 28px;
+  line-height: 25px;
+  font-size: 18px;
+  -webkit-border-radius: 17.5px;
+  -moz-border-radius: 17.5px;
+  -ms-border-radius: 17.5px;
+  -o-border-radius: 17.5px;
+}
+
+header .inner .categoryBox > .loginBox .login.after span {
+  font-family: NanumSquareOTFB;
+  font-size: 15px;
+}
+
+header .inner .categoryBox > .loginBox .login.after > a {
+  display: inline-block;
+  border: none;
+  width: auto;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+nav.gnb {
+  background-color: #282828;
+  height: 44px;
+  line-height: 40px;
+}
+
+nav.gnb > ul {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+nav.gnb > ul > li {
+  float: left;
+  margin-right: 52px;
+}
+
+nav.gnb > ul > li > a {
+  width: 70px;
+  height: 20px;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+nav.gnb > ul > li.active > a {
+  color: #ffb000;
+}
+
+nav.gnb > ul > li:last-child {
+  margin-right: 0;
+}
+
+.mesage {
+  background: #4505e0;
+}
+
+.mesage.no {
+  height: 80px;
+  background-color: #ffb000;
+}
+
+.mesage.no .wrap {
+  padding: 29px 0;
+}
+
+.mesage.no .wrap p > a {
+  color: #4505e0;
+  position: absolute;
+  right: 45px;
+}
+
+.mesage .wrap {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.mesage .wrap p {
+  position: relative;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.mesage .wrap p > a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.mesage .wrap p > span {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+/* 푸터 */
+footer {
+  background: #282828;
+  color: #fff;
+  margin-top: 100px;
+}
+
+footer .inner {
+  width: 1240px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+footer .inner > .siteMap {
+  padding-top: 20px;
+}
+
+footer .inner > .siteMap h1 {
+  width: 151px;
+  float: left;
+  font-family: NanumSquareOTFB;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+footer .inner > .siteMap h1 > a {
+  color: #fff;
+}
+
+footer .inner > .siteMap > ul {
+  float: right;
+  margin-top: 30px;
+}
+
+footer .inner > .siteMap > ul > li {
+  float: left;
+  font-size: 16px;
+  margin-left: 20px;
+  letter-spacing: -0.4px;
+}
+
+footer .inner > .siteMap > ul > li > a {
+  color: #fff;
+}
+
+footer .inner > .copy {
+  padding: 20px 0;
+}
+
+footer .inner > .copy > p {
+  float: left;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+footer .inner > .copy > p span {
+  color: #ffb000;
+}
+
+footer .inner > .copy > ul {
+  float: right;
+}
+
+footer .inner > .copy > ul > li {
+  float: left;
+  margin-left: 25px;
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+footer .inner > .copy > ul > li img {
+  width: 100%;
+}
+
+.pagenation {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.pagenation > ul li {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.pagenation > ul li a {
+  color: #afafaf;
+}
+
+.pagenation > ul li:first-child a {
+  color: #282828;
+}
+
+.pagenation > ul li:last-child a {
+  color: #282828;
+}
+
+.pagenation > ul li.active a {
+  color: #ffb000;
+}
+
+.layerPop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.layerPop > .dim {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.layerPop > .dim .easyUse {
+  padding: 20px;
+  background: #fff;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  width: 850px;
+  margin-left: -425px;
+  -webkit-transform: rotate(50%);
+          transform: rotate(50%);
+  border-radius: 5px;
+}
+
+.layerPop > .dim .easyUse > h2 {
+  font-size: 32px;
+  letter-spacing: -1.2px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .selectTab {
+  margin-bottom: 10px;
+}
+
+.layerPop > .dim .easyUse .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.layerPop > .dim .easyUse .selectTab li.active {
+  color: #ffb000;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox {
+  position: relative;
+  float: left;
+  width: 450px;
+  height: 30px;
+  line-height: 32px;
+  padding-left: 20px;
+  border-radius: 35px;
+  border: solid 1px #282828;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox:after {
+  content: '∨';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox.active {
+  border-radius: 15px 15px 0 0;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox.active > ul {
+  display: block !important;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.usage > li > ul {
+  padding-left: 20px;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.passion {
+  background: #c70800;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.freedom {
+  background: #ff3100;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.wisdom {
+  background: #e8481c;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.knowledge {
+  background: #f8e71c;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.observation {
+  background: #d8d94b;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.stability {
+  background: #4A5928;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.balance {
+  background: #045D76;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.creation {
+  background: #067ef2;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.communication {
+  background: #014d97;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.plan {
+  background: #0d1a6e;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.trust {
+  background: #623689;
+}
+
+.layerPop > .dim .easyUse .searchform .selectBox > ul.vocieColor > li > span.adoption {
+  background: #BF3F86;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox {
+  float: right;
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px #282828;
+  overflow: hidden;
+  position: relative;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.layerPop > .dim .easyUse .searchform .searchBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 22px;
+  margin-top: 10px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult strong {
+  color: #ffb000;
+}
+
+.layerPop > .dim .easyUse .searchform .searchResult > span {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #282828;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.layerPop > .dim .easyUse .serachList > ul {
+  margin-top: 20px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li {
+  padding: 15px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo {
+  width: 580px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li strong {
+  margin-right: 10px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div.voiceInfo ul li.title {
+  font-size: 22px;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox {
+  position: relative;
+  display: inline-block;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: solid 2px red;
+}
+
+.layerPop > .dim .easyUse .serachList > ul > li > div .imgBox span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.layerPop > .dim .easyUse .notfound {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.layerPop > .dim .easyUse .notfound h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #282828;
+  line-height: 1.2;
+}
+
+.layerPop > .dim .easyUse .btn_list {
+  width: 380px;
+  border-radius: 25px;
+  background-color: #ffb000;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  padding: 5px 20px;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+.layerPop > .dim .singAlert {
+  width: 849px;
+  padding: 80px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.layerPop > .dim .singAlert > h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 36px;
+  text-align: center;
+  color: #282828;
+  line-height: 1.4;
+}
+
+.layerPop > .dim .singAlert > p {
+  font-family: NanumSquareOTFR;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: normal;
+  text-align: center;
+  color: #d0021b;
+}
+
+.layerPop > .dim .singAlert .btn_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.layerPop > .dim .singAlert .btn_signIN {
+  display: inline-block;
+  width: 280px;
+  height: 49px;
+  line-height: 49px;
+  border-radius: 24.5px;
+  background-color: #282828;
+  margin-top: 60px;
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+
+.layerPop > .dim .singAlert.save {
+  padding: 50px 0;
+}
+
+.layerPop > .dim .singAlert.save > h2 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.layerPop > .dim .singAlert.save > p {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.layerPop > .dim .singAlert.save .btn_signIN {
+  margin-top: 30px;
+}
+
+/* 기본스타일 */
+.displayB {
+  display: block;
+}
+
+.displayI {
+  display: inline;
+}
+
+.displayIB {
+  display: inline-block;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
+}
+/*# sourceMappingURL=common.css.map */

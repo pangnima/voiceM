@@ -1,0 +1,570 @@
+@charset "UTF-8";
+.easyUseWrap {
+  width: 1240px;
+  margin: 55px auto 0;
+  position: relative;
+}
+
+.easyUseWrap > h2 {
+  font-size: 40px;
+  letter-spacing: -0.7px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.easyUseWrap .choiceBox {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.easyUseWrap .choiceBox > li {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 18px;
+  border: solid 1px #282828;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #282828;
+  cursor: pointer;
+  margin-left: 20px;
+  text-indent: 20px;
+}
+
+.easyUseWrap .choiceBox > li img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.easyUseWrap .easyTrackInfo {
+  background-color: #ffffff;
+  border: solid 1px #afafaf;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px 30px;
+}
+
+.easyUseWrap .easyTrackInfo > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox {
+  display: inline-block;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: solid 3px blue;
+  position: relative;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox > img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.easyUseWrap .easyTrackInfo > div.imgBox > span {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 10;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  width: 900px;
+  margin: 0 20px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox h2 {
+  font-family: NanumSquareOTFR;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  color: #282828;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div {
+  margin-top: 5px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
+  font-size: 24px;
+  letter-spacing: -0.9px;
+  color: #282828;
+  margin-right: 40px;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl dt {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div dl dd {
+  display: inline-block;
+  font-weight: normal;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div span {
+  display: inline-block;
+  margin-right: 60px;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  letter-spacing: -0.7px;
+  color: #282828;
+}
+
+.easyUseWrap .easyTrackInfo > div.infoBox > div span:last-child {
+  font-size: 22px;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox {
+  width: 100px;
+  text-align: center;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox > a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  margin: 0 3px;
+  letter-spacing: -0.9px;
+  line-height: 1;
+  color: #282828;
+}
+
+.easyUseWrap .easyTrackInfo > div.btnBox > a span {
+  display: block;
+  margin-top: 10px;
+  letter-spacing: -0.9px;
+  color: #4505e0;
+}
+
+.easyUseWrap .easyTrackText {
+  height: 615px;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  background: #fff;
+  color: #afafaf;
+  border-radius: 2px;
+  margin: 30px 0 50px;
+  padding: 50px 30px;
+}
+
+.easyUseWrap button {
+  display: block;
+  font-family: NanumSquareOTFB;
+  font-weight: bold;
+  width: 210px;
+  height: 49px;
+  border-radius: 24.5px;
+  background-color: #282828;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 auto 100px;
+  border: none;
+}
+
+.easyUseWrap .purchaseComplit {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.easyUseWrap .purchaseComplit h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  color: #282828;
+}
+
+.easyUseWrap .purchaseComplit .btn_down {
+  display: block;
+  width: 280px;
+  height: 49px;
+  line-height: 49px;
+  margin: 40px auto 230px;
+  border-radius: 24.5px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #282828;
+}
+
+.easyUserPop {
+  width: 580px;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: fixed;
+  right: 0;
+  padding: 50px 55px 0 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop > h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  color: #282828;
+}
+
+.easyUserPop .selectTab {
+  margin-bottom: 10px;
+}
+
+.easyUserPop .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.easyUserPop .selectTab li.active {
+  color: #ffb000;
+}
+
+.easyUserPop .selectTab {
+  margin-bottom: 30px;
+}
+
+.easyUserPop .selectTab li {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  margin-right: 25px;
+}
+
+.easyUserPop .selectTab li.active {
+  color: #ffb000;
+}
+
+.easyUserPop .selectBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  padding-left: 30px;
+  border: solid 1px #282828;
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  letter-spacing: -0.8px;
+  color: #282828;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop .selectBox:after {
+  content: '∨';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.easyUserPop .selectBox.active {
+  border-radius: 15px 15px 0 0;
+  background: #fff;
+}
+
+.easyUserPop .selectBox.active > ul {
+  display: block !important;
+}
+
+.easyUserPop .selectBox > ul.usage {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+  background: #fff;
+  border: solid 1px #282828;
+  border-top: none;
+  padding: 10px 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+  border-radius: 0 0 15px 15px;
+}
+
+.easyUserPop .selectBox > ul.usage > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.easyUserPop .selectBox > ul.usage > li > ul {
+  padding-left: 20px;
+  letter-spacing: -0.8px;
+  color: #282828;
+}
+
+.easyUserPop .selectBox > ul.vocieColor {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 620px;
+  background: #fff;
+  border: solid 1px #282828;
+  padding: 10px 0 0 20px;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  color: #afafaf;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.passion {
+  background: #c70800;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.freedom {
+  background: #ff3100;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.wisdom {
+  background: #e8481c;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.knowledge {
+  background: #f8e71c;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.observation {
+  background: #d8d94b;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.stability {
+  background: #4A5928;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.balance {
+  background: #045D76;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.creation {
+  background: #067ef2;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.communication {
+  background: #014d97;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.plan {
+  background: #0d1a6e;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.trust {
+  background: #623689;
+}
+
+.easyUserPop .selectBox > ul.vocieColor > li > span.adoption {
+  background: #BF3F86;
+}
+
+.easyUserPop .searchBox {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  margin-top: 18px;
+  border: solid 1px #282828;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.easyUserPop .searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+.easyUserPop .searchBox label {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.easyUserPop .searchList {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.easyUserPop .searchList.more {
+  height: 500px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 10px;
+  overflow-y: scroll;
+}
+
+.easyUserPop .searchList > li {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.easyUserPop .searchList > li > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.easyUserPop .searchList > li > div.imgBox {
+  position: relative;
+  width: 125px;
+  margin-right: 20px;
+}
+
+.easyUserPop .searchList > li > div.imgBox > img {
+  width: 100%;
+}
+
+.easyUserPop .searchList > li > div.imgBox span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.easyUserPop .searchList > li > div.infoBox {
+  width: 233px;
+}
+
+.easyUserPop .searchList > li > div.infoBox h2 {
+  font-family: NanumSquareOTFB;
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox h2 span {
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: -0.9px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox p {
+  font-family: NanumSquareOTFR;
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  color: #282828;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.easyUserPop .searchList > li > div.infoBox p span {
+  display: inline-block;
+  width: 70px;
+  font-family: NanumSquareOTFR;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox p strong {
+  font-family: NanumSquareOTFB;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: #282828;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul {
+  margin-top: 10px;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul > li {
+  display: inline-block;
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  margin-right: 15px;
+  vertical-align: middle;
+  text-align: center;
+  color: #4505e0;
+}
+
+.easyUserPop .searchList > li > div.infoBox > ul > li img {
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+.easyUserPop .btn_more {
+  display: block;
+  width: 130px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-color: #282828;
+  font-family: NanumSquareOTFR;
+  font-size: 12px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.easyUserPop .notfound {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.easyUserPop .notfound h2 {
+  font-size: 36px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #282828;
+  line-height: 1.2;
+}
+/*# sourceMappingURL=easyuse.css.map */
